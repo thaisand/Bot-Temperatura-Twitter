@@ -1,0 +1,137 @@
+[
+    {
+        "label": "tweepy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tweepy",
+        "description": "tweepy",
+        "detail": "tweepy",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "config",
+        "description": "config",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "tweet",
+        "kind": 2,
+        "importPath": "tweet",
+        "description": "tweet",
+        "peekOfCode": "def tweet(text):\n    response = client.create_tweet(text=text)\n    print(response)\nwhile True:\n    try:\n        # Obter a temperatura atual de Belo Horizonte usando a API OpenWeatherMap\n        url = f\"http://api.openweathermap.org/data/2.5/weather?q=Belo%20Horizonte,BR&appid={config.OPENWEATHER_API}&units=metric\"\n        response = requests.get(url)\n        # Verificar o código de status da resposta\n        if response.status_code == 200:",
+        "detail": "tweet",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "tweet",
+        "description": "tweet",
+        "peekOfCode": "client = tweepy.Client(consumer_key=config.API_KEY, consumer_secret=config.API_SECRET, access_token=config.ACCESS_TOKEN, access_token_secret=config.ACCESS_TOKEN_SECRET)\nauth = tweepy.OAuth1UserHandler(consumer_key=config.API_KEY, consumer_secret=config.API_SECRET, access_token=config.ACCESS_TOKEN, access_token_secret=config.ACCESS_TOKEN_SECRET)\napi = tweepy.API(auth)\n# Variáveis para armazenar a última temperatura twittada\nlast_temperature = None\n# Função para twittar usando a API do Twitter\ndef tweet(text):\n    response = client.create_tweet(text=text)\n    print(response)\nwhile True:",
+        "detail": "tweet",
+        "documentation": {}
+    },
+    {
+        "label": "auth",
+        "kind": 5,
+        "importPath": "tweet",
+        "description": "tweet",
+        "peekOfCode": "auth = tweepy.OAuth1UserHandler(consumer_key=config.API_KEY, consumer_secret=config.API_SECRET, access_token=config.ACCESS_TOKEN, access_token_secret=config.ACCESS_TOKEN_SECRET)\napi = tweepy.API(auth)\n# Variáveis para armazenar a última temperatura twittada\nlast_temperature = None\n# Função para twittar usando a API do Twitter\ndef tweet(text):\n    response = client.create_tweet(text=text)\n    print(response)\nwhile True:\n    try:",
+        "detail": "tweet",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "tweet",
+        "description": "tweet",
+        "peekOfCode": "api = tweepy.API(auth)\n# Variáveis para armazenar a última temperatura twittada\nlast_temperature = None\n# Função para twittar usando a API do Twitter\ndef tweet(text):\n    response = client.create_tweet(text=text)\n    print(response)\nwhile True:\n    try:\n        # Obter a temperatura atual de Belo Horizonte usando a API OpenWeatherMap",
+        "detail": "tweet",
+        "documentation": {}
+    },
+    {
+        "label": "last_temperature",
+        "kind": 5,
+        "importPath": "tweet",
+        "description": "tweet",
+        "peekOfCode": "last_temperature = None\n# Função para twittar usando a API do Twitter\ndef tweet(text):\n    response = client.create_tweet(text=text)\n    print(response)\nwhile True:\n    try:\n        # Obter a temperatura atual de Belo Horizonte usando a API OpenWeatherMap\n        url = f\"http://api.openweathermap.org/data/2.5/weather?q=Belo%20Horizonte,BR&appid={config.OPENWEATHER_API}&units=metric\"\n        response = requests.get(url)",
+        "detail": "tweet",
+        "documentation": {}
+    },
+    {
+        "label": "API_KEY",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "API_KEY = 'orlMuyLbhWitymJrxus4Nn46d'\nAPI_SECRET = '7DH3n8BFWj4SpZUmUgWdiNOvyZfhoLdt9Hk2uufBLoTlamD80t'\nBEARER_TOKEN = 'AAAAAAAAAAAAAAAAAAAAABZTogEAAAAA9tL2e%2F4u2ByELixdhEzIc4tuShg%3DpVvYlE39qC6zJ5ARegZvohO0QqD8loKkqvvltcEA6WsMMKCI4L'\nACCESS_TOKEN = '1637446359333699585-JFYjT9oRWms1CBvwWRqFvkmRsOX3rf'\nACCESS_TOKEN_SECRET = '7SY9nJ26ILlgm7owjpM1qsxB4DT95hNj6JyLbRHhRd7kU'\n# Configurar a chave de acesso do Open Weather\nOPENWEATHER_API = 'd5e40bae38cd01caf620c5aa0a9f40a3'",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "API_SECRET",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "API_SECRET = '7DH3n8BFWj4SpZUmUgWdiNOvyZfhoLdt9Hk2uufBLoTlamD80t'\nBEARER_TOKEN = 'AAAAAAAAAAAAAAAAAAAAABZTogEAAAAA9tL2e%2F4u2ByELixdhEzIc4tuShg%3DpVvYlE39qC6zJ5ARegZvohO0QqD8loKkqvvltcEA6WsMMKCI4L'\nACCESS_TOKEN = '1637446359333699585-JFYjT9oRWms1CBvwWRqFvkmRsOX3rf'\nACCESS_TOKEN_SECRET = '7SY9nJ26ILlgm7owjpM1qsxB4DT95hNj6JyLbRHhRd7kU'\n# Configurar a chave de acesso do Open Weather\nOPENWEATHER_API = 'd5e40bae38cd01caf620c5aa0a9f40a3'",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "BEARER_TOKEN",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "BEARER_TOKEN = 'AAAAAAAAAAAAAAAAAAAAABZTogEAAAAA9tL2e%2F4u2ByELixdhEzIc4tuShg%3DpVvYlE39qC6zJ5ARegZvohO0QqD8loKkqvvltcEA6WsMMKCI4L'\nACCESS_TOKEN = '1637446359333699585-JFYjT9oRWms1CBvwWRqFvkmRsOX3rf'\nACCESS_TOKEN_SECRET = '7SY9nJ26ILlgm7owjpM1qsxB4DT95hNj6JyLbRHhRd7kU'\n# Configurar a chave de acesso do Open Weather\nOPENWEATHER_API = 'd5e40bae38cd01caf620c5aa0a9f40a3'",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "ACCESS_TOKEN",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "ACCESS_TOKEN = '1637446359333699585-JFYjT9oRWms1CBvwWRqFvkmRsOX3rf'\nACCESS_TOKEN_SECRET = '7SY9nJ26ILlgm7owjpM1qsxB4DT95hNj6JyLbRHhRd7kU'\n# Configurar a chave de acesso do Open Weather\nOPENWEATHER_API = 'd5e40bae38cd01caf620c5aa0a9f40a3'",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "ACCESS_TOKEN_SECRET",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "ACCESS_TOKEN_SECRET = '7SY9nJ26ILlgm7owjpM1qsxB4DT95hNj6JyLbRHhRd7kU'\n# Configurar a chave de acesso do Open Weather\nOPENWEATHER_API = 'd5e40bae38cd01caf620c5aa0a9f40a3'",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "OPENWEATHER_API",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "OPENWEATHER_API = 'd5e40bae38cd01caf620c5aa0a9f40a3'",
+        "detail": "config",
+        "documentation": {}
+    }
+]
