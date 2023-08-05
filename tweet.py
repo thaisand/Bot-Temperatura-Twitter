@@ -1,7 +1,7 @@
 import tweepy
 import requests
 import time
-import config 
+import config
 
 # Autenticar o bot com o Twitter
 client = tweepy.Client(consumer_key=config.API_KEY, consumer_secret=config.API_SECRET, access_token=config.ACCESS_TOKEN, access_token_secret=config.ACCESS_TOKEN_SECRET)
@@ -43,5 +43,5 @@ while True:
     except Exception as e:
         print(f"Ocorreu um erro: {str(e)}")
 
-    # Aguardar 30 segundos antes de verificar novamente a temperatura
-    time.sleep(30)
+    # Aguardar 30 minutos antes de verificar novamente a temperatura
+    time.sleep(1800)
