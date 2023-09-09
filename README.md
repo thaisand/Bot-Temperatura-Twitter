@@ -5,7 +5,8 @@ Please select a language:
 
 # Twitter-Bot-Temperature
 
-Twitter-Bot-Temperature is a Python application that automatically tweets the current temperature in Belo Horizonte, Minas Gerais - Brasil. 
+[Twitter-Bot-Temperature](https://twitter.com/temperaturabh)
+ is a Python application that automatically tweets the current temperature in Belo Horizonte, Minas Gerais - Brasil. 
 
 The bot uses the OpenWeatherMap API to obtain the temperature and the Tweepy library to interact with the Twitter API. It periodically checks the temperature and, if there is a difference from the last tweeted temperature, it updates the Twitter status with the new temperature. The code is written to run in a loop, checking the temperature every 30 minutes. **The Twitter access keys and the OpenWeatherMap API key must be configured before execution.
 
@@ -31,7 +32,7 @@ OPENWEATHER_API = 'ENTER_YOUR_KEY_HERE'
   
 # Bot-Temperatura-Twitter
 
-O Bot-Temperatura-Twitter é um aplicativo em Python que twitta automaticamente a temperatura atual de Belo Horizonte. 
+O [Bot-Temperatura-Twitter](https://twitter.com/temperaturabh) é um aplicativo em Python que twitta automaticamente a temperatura atual de Belo Horizonte. 
 
 O bot usa a API OpenWeatherMap para obter a temperatura e a biblioteca Tweepy para interagir com a API do Twitter. Ele verifica periodicamente a temperatura e, se houver uma diferença em relação à última temperatura twittada, ele atualiza o status do Twitter com a nova temperatura. O código é escrito para ser executado em um loop, verificando a temperatura a cada 30 minutos. **As chaves de acesso do Twitter e a chave de API do OpenWeatherMap devem ser configuradas antes da execução.**
 
